@@ -1,0 +1,95 @@
+/* Variables */
+  $color-primary: #6469ff;
+  $color-black: #222328;
+  $color-paragraph: #666e75;
+  $color-base-100: #fafafc;
+  $color-base-200: #e6ebf4;
+  $color-base-300: #bdc0cf;
+  $color-base-400: #666;
+  $color-error: #ff5b5b;
+  $box-shadow: 0 0 1px 0 rgba(189,192,207,0.06),0 10px 16px -1px rgba(189,192,207,0.2);
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline-color: $color-primary;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  background-color: #f9fafe;
+}
+
+header {
+  h1 {
+    padding: 1.2rem;
+    color: $color-black;
+  }
+
+  input,
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+  }
+
+  input {
+    border: 1px solid $color-base-200;
+    color: var(--color-black);
+    background-color: #fff;
+    box-shadow: 0 5px 25px -5px rgba(30,16,84,.1);
+  }
+
+  .btn__submit {
+    background-color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+  } 
+
+  .btn__submit:active {
+    background-color: darken($color-primary, 5%);
+    transform: scale(0.98);
+  }
+
+  .btn__remove {
+    background-color: $color-base-300;
+    font-weight: lighter;
+  }
+
+  .btn__remove:active {
+    background-color: darken($color-base-300, 10%);
+    transform: scale(0.98);
+  }
+
+  .btn__remove:focus {
+    outline-color: $color-base-300;
+  }
+}
+
+
+.container {
+  margin: 2rem auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 1rem;
+
+  .card {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: $box-shadow;
+    padding: 1rem 2rem;
+    border: 1px solid $color-base-200
+  }
+}
