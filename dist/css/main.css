@@ -81,6 +81,14 @@ header .btn__remove:focus {
   border-radius: 4px;
   -webkit-box-shadow: 0 0 1px 0 rgba(189, 192, 207, 0.06), 0 10px 16px -1px rgba(189, 192, 207, 0.2);
           box-shadow: 0 0 1px 0 rgba(189, 192, 207, 0.06), 0 10px 16px -1px rgba(189, 192, 207, 0.2);
-  padding: 1rem 2rem;
   border: 1px solid #e6ebf4;
+  padding: 10px;
+}
+
+.container .card img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
 }
