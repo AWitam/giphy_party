@@ -24,13 +24,14 @@ header h1 {
 
 header input,
 header button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 4px;
   border: 0;
   color: #fff;
 }
 
 header input {
+  width: 40%;
   border: 1px solid #e6ebf4;
   color: var(--color-black);
   background-color: #fff;
