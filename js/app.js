@@ -8,11 +8,11 @@ $(function () {
     let apiKey = "0ePgbnodMjWOuyyUDoFLULIRcvki8uTh";
     //If user doesn't enter a search term append random gif
     if (searchTerm === "") {
-      xhr = $.get("http://api.giphy.com/v1/gifs/random", {
+      xhr = $.get("https://api.giphy.com/v1/gifs/random", {
         api_key: apiKey,
       });
     } else {
-      xhr = $.get("http://api.giphy.com/v1/gifs/search", {
+      xhr = $.get("https://api.giphy.com/v1/gifs/search", {
         api_key: apiKey,
         q: searchTerm,
       });
@@ -45,22 +45,19 @@ $(function () {
 
   // removes all gifs onclick
 
-  
-
   //Trigger Gif search on click or 'Enter' keyup event
   $(".btn__submit").on("click", (event) => {
     addDiv();
-    $("input").val('');
+    $("input").val("");
     event.stopPropagation();
   });
 
-  $(document).on("keyup", (event) => { 
+  $(document).on("keyup", (event) => {
     event.preventDefault();
     if (event.keyCode === 13) {
-      $(".btn__submit").click();  
-      event.stopPropagation();   
+      $(".btn__submit").click();
+      event.stopPropagation();
     }
-    
   });
 
   $(".btn__remove").on("click", (event) => {
@@ -68,5 +65,3 @@ $(function () {
     $("input").focus();
   });
 });
-
-s
