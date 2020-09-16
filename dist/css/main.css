@@ -31,7 +31,6 @@ header button {
 }
 
 header input {
-  width: 40%;
   border: 1px solid #e6ebf4;
   color: var(--color-black);
   background-color: #fff;
@@ -92,4 +91,29 @@ header .btn__remove:focus {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    width: 95%;
+  }
+  .search__bar {
+    width: 95%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-gap: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For mobile phones: */
+  .container {
+    width: 85%;
+  }
 }

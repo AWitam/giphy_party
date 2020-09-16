@@ -43,7 +43,6 @@ header {
   }
 
   input {
-    width: 40%;
     border: 1px solid $color-base-200;
     color: var(--color-black);
     background-color: #fff;
@@ -99,7 +98,31 @@ header {
       object-fit: cover;
       border-radius: 4px;
     }
-  }
+  } 
+}
 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    width: 95%;
+  }
  
+  .search__bar {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    grid-gap: 0.5rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  /* For mobile phones: */
+  .container {
+    width: 85%;
+  }
 }
